@@ -21,7 +21,7 @@
 			$this->createFieldTable();
 		}
 
-		public function update($prev_version) {
+		public function update($previousVersion = false) {
 
 			if (version_compare($prev_version, '2.0', '<')) {
 				$v1x_table = 'tbl_fields_multilingual';
